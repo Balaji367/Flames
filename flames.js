@@ -56,7 +56,7 @@ function getFlames(r,i1,i2){
         }
     }
     if(i1 === '' || i2 === ''){
-        return "Enter Names Please!";
+        return `<strong style = "color:red">Enter Names Please!</strong>`;
     }
     return `The relationship between ${i1} and ${i2} is <strong style="color:green"><i>${fla}</i></strong>`;
 }
