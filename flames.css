@@ -74,7 +74,7 @@ body{
 }
 .btn{
     padding:1rem 2rem;
-    margin-left:4rem;
+    margin:0 auto;
     border-radius:2rem;
     outline:none;
     border:none;
