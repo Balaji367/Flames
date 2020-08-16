@@ -55,7 +55,10 @@ function getFlames(r,i1,i2){
             fla = fla1.concat(fla2);
         }
     }
-    return `${i1} is a ${fla} of ${i2}`;
+    if(i1 === '' || i2 === ''){
+        return "Enter Names Please!";
+    }
+    return `The relationship between ${i1} and ${i2} is <strong style="color:green"><i>${fla}</i></strong>`;
 }
 const input3 = document.querySelector("button");
 const input4 = document.querySelector("#output");
@@ -64,5 +67,5 @@ let rm1;
 let rm2;
 input3.addEventListener('click',function(){
     input5.style.display ="block";
-    input4.innerText = op();
+    input4.innerHTML = op();
 });
