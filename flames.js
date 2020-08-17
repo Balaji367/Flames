@@ -58,7 +58,7 @@ function getFlames(r,i1,i2){
     if(i1 === '' || i2 === ''){
         return `<strong style = "color:red">Enter Names Please!</strong>`;
     }
-    return `The relationship between ${i1} and ${i2} is <strong style="color:green"><i>${fla}</i></strong>`;
+    return `The relationship between ${i1} and ${i2} is <strong style="color:yellow"><i>${fla}</i></strong>`;
 }
 const input3 = document.querySelector("button");
 const input4 = document.querySelector("#output");
