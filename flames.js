@@ -55,9 +55,9 @@ function getFlames(r,i1,i2){
             fla = fla1.concat(fla2);
         }
     }
-    if(i1 === 'prabhu' || i2 === 'prabhu'){
-        return `The relationship between ${i1} and ${i2} is <strong style="color:yellow"><i>ANBU (LoVE)</i></strong>`;
-}
+
+
+
     if(i1 === '' || i2 === ''){
         return `<strong style = "color:red">Enter Names Please!</strong>`;
     }
