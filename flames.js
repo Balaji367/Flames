@@ -42,7 +42,7 @@ return getFlames(res,input1,input2);
 }
 function getFlames(r,i1,i2){
     let num = [r % 6,r % 5,r % 4,r % 3,r % 2];
-    let fla = ['Friend','Lover','Affection','Marriage','Enemy','Sister'];
+    let fla = ['Friends','Lovers','Affection','Marriage','Enemy','Siblings'];
     let fla1;
     let fla2;
     for(i=0;i<num.length;i++) {
@@ -55,13 +55,10 @@ function getFlames(r,i1,i2){
             fla = fla1.concat(fla2);
         }
     }
-
-
-
     if(i1 === '' || i2 === ''){
         return `<strong style = "color:red">Enter Names Please!</strong>`;
     }
-    return `The relationship between ${i1} and ${i2} is <strong style="color:yellow"><i>${fla}</i></strong>`;
+    return `The relationship between ${i1} and ${i2} is <strong style="color:green"><i>${fla}</i></strong>`;
 }
 const input3 = document.querySelector("button");
 const input4 = document.querySelector("#output");
